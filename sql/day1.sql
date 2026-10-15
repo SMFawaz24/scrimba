@@ -9,3 +9,8 @@ SELECT brand, color, price FROM cars WHERE color!='yellow' -- exclude condition
 select brand, color, price from cars where color NOT LIKE "%green" -- excludes values including 'green'
 
 select brand, color, model, price from cars where model = "DB_" -- only includes specific given values
+
+SELECT brand, model, year, condition, price FROM cars
+	WHERE condition >= 3
+	AND year < 1970
+	AND price <= 100000;
