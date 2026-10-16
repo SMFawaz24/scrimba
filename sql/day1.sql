@@ -32,3 +32,8 @@ select brand, model, year, condition, price from cars
 where (year IN (2000, 2002, 2004, 2006)
 and condition >= 3)
 or brand = 'Ford'; -- IN operator specifies the values to be taken into account
+
+
+select brand, model, color from cars where color like '%red%' and brand !='Ferrari' and sold = false;
+
+select brand, model, color from cars where color not in ('red','blue','white') and brand not in ('Aston Martin','Bentley','Jaguar') and sold = false;
