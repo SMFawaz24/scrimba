@@ -41,3 +41,14 @@ function increment(){
     count++
     console.log(count)
 }
+
+// DOM - Document Object Module
+// used in modifying websites with JS
+
+let countEl = document.getElementById("count-el") // pass in arguments
+console.log(countEl)
+let count = 0
+function increment() {
+    count = count + 1
+    countEl.innerText = count
+}
