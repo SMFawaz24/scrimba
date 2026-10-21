@@ -43,4 +43,4 @@ print(meal_total)
 
 drinks_total = 250-90
 meal_total = food_total+drinks_total
-print(meal_total)
+print(meal_total) 
